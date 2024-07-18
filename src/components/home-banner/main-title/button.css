@@ -1,0 +1,10 @@
+.text-button{
+    color: white;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:700px){
+    .text-button{
+        margin: 0;
+    }
+}

@@ -1,0 +1,7 @@
+.dark-proyecto-bg{
+    background-image: linear-gradient(to left top, #070707, #0a0712, #0f0719, #14061e, #180523);
+}
+
+.light-proyecto-bg{
+    background-image: linear-gradient(to left top, #b7b7b7, #b9b9b9, #bbbbbb, #bebebe, #c0c0c0);
+}
