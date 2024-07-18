@@ -8,7 +8,10 @@
   font-size: 1em;
   animation: color-change 5s infinite;
 }
-
+.blur-backdrop {
+  backdrop-filter: blur(15px); /* Chrome, Edge, Safari */
+  -webkit-backdrop-filter: blur(15px); /* Safari */
+}
 
 .bg-top-banner-light{
   background: rgb(255, 255, 255);

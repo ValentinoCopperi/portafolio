@@ -17,7 +17,8 @@ export function ProyectosContextProvider({ children }) {
         NodeJS: false,
         SQL: false,
         MongoDB: false,
-        Typescript: false
+        Typescript: false,
+        Firebase:false
     })
     const handleFilter = (id) => {
         setSelectedFilters(prev => {

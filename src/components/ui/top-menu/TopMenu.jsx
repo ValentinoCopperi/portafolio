@@ -11,7 +11,7 @@ export default function TopMenu() {
   const {mode,handleMode} = useModeContext()
 
   return (
-    <div className='fixed top-0 right-0 w-full z-10 ' style={{backdropFilter:'blur(15px)'}}>
+    <div className='fixed top-0 right-0 w-full z-20 blur-backdrop' >
       <div  className={classNames('flex justify-center items-center py-3 px-4 border-b border-gray-400',{'bg-top-banner-light' : mode , 'bg-top-banner-dark' : !mode})}>
         <RocketLaunchIcon className='text-violet-400' />
         <p className='text-animation  mx-2 text-center sm:mx-4'>Contactame ahora para empezar a trabajar juntos!</p>

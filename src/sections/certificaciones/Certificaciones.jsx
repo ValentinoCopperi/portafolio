@@ -6,7 +6,7 @@ import './certificaciones.css'
 export default function Certificaciones() {
     const { mode } = useModeContext()
     return (
-        <div className='w-[90%] md:w-[80%] py-10 mx-auto text-center sm:text-left'>
+        <div className='w-full md:w-[80%] py-10 mx-auto text-center sm:text-left'>
             <div>
                 <span className='text-[#bb87f3] font-semibold'>Certificaciones</span>
 

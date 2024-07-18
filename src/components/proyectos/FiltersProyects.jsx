@@ -79,6 +79,13 @@ export default function FiltersProyects() {
             >
                 Javascript
             </button>
+            <button
+                className={classNames('p-2 mx-1 rounded-full text-white font-semibold', { 'bg-[#5d15ab]': selectedFilters.Firebase, 'bg-[#bb87f3]': !selectedFilters.Firebase })}
+                id='Firebase'
+                onClick={(e) => handleFilter(e.target.id)}
+            >
+                Firebase
+            </button>
         </>
     )
 }
