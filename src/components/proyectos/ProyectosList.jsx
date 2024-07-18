@@ -51,13 +51,13 @@ export default function ProyectosList() {
                                     <a href={proyecto.link} target="_blank">Ir al sitio</a>
                                 </p>
 
-                                <div className="flex-col md:flex-row  gap-2 max-[600px]:p-2">
+                                <div className="flex-col md:flex md:flex-row  gap-2 max-[600px]:p-2">
                                     {
                                         proyecto.tecnologias.map((tecn) => {
                                             return (
-                                                <a href="#" target="_blank" className={classNames(' px-3 py-1 rounded-full text-sm font-semibold transition duration-300 hover:border-transparent  hover:bg-[#5d15ab] hover:text-white',{'text-violet-800 border-violet-800':mode,'text-[#bb87f3] border-[#bb87f3] ':!mode})}>
+                                                <p href="#" target="_blank" className={classNames(' px-3 py-1 rounded-full text-sm font-semibold transition duration-300 hover:border-transparent  hover:bg-[#5d15ab] hover:text-white',{'text-violet-800 border-violet-800':mode,'text-[#bb87f3] border-[#bb87f3] ':!mode})}>
                                                     {tecn}
-                                                </a>
+                                                </p>
                                             )
                                         })
                                     }
