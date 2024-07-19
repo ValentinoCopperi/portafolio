@@ -7,6 +7,7 @@ import { useModeContext } from "./context/mode/Mode"
 import classNames from "classnames"
 import Proyectos from "./sections/proyectos/Proyectos"
 import Certificaciones from "./sections/certificaciones/Certificaciones"
+import Estudios from "./sections/estudios/Estudios"
 function App() {
   const {mode} = useModeContext()
   return (
@@ -17,6 +18,7 @@ function App() {
         <SobreMi/>
         <Proyectos/>
         <Certificaciones/>
+        <Estudios/>
       </div>
     </>
   )

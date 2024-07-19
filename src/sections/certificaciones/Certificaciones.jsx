@@ -23,7 +23,7 @@ export default function Certificaciones() {
                             </div>
                             <div className='w-2/3'>
                                 <h5 className={classNames('text-[14px] font-normal',{'text-violet-800':mode,'text-[#bb87f3]':!mode})}>{cert.data}</h5>
-                                <h1 className={classNames('text-[22px] font-semibold',{'text-black':mode,'text-[#b431e8]':!mode})}>{cert.title}</h1>
+                                <h1 className={classNames('text-[22px] font-semibold',{'text-black':mode,'text-white':!mode})}>{cert.title}</h1>
                                 <h5 className={classNames('text-[14px] font-normal',{'text-violet-800':mode,'text-[#bb87f3]':!mode})}>{cert.place}</h5>
                             </div>
                         </a>
