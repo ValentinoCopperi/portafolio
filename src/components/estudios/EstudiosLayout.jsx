@@ -22,7 +22,7 @@ export default function EstudiosLayout() {
     return (
         <div>
             {estudios.slice(0, visibleCount).map((item) => (
-                <article key={item.id}>
+                <article key={item.id} >
                     <div className="ps-2 my-2 first:mt-0">
                         <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">
                             {item.title}
@@ -42,10 +42,10 @@ export default function EstudiosLayout() {
                             <h3 className={classNames("flex gap-x-1.5 font-bold",{"text-black":mode,"text-white":!mode})}>
                                 {item.title}
                             </h3>
-                            <p className={classNames("mt-1 text-sm",{"text-gray-600":mode,"text-neutral-400":!mode})}>
+                            <p className={classNames("mt-1 text-sm text-left text-wrap",{"text-gray-600":mode,"text-neutral-400":!mode})}>
                                 {item.desc}
                             </p>
-                            <div className="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500  disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400">
+                            <div className="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-xs flex-wrap rounded-lg border border-transparent text-gray-500  disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400">
                                 {item.conocimientos.map((con, index) => (
                                     <p key={index} className={classNames({"text-violet-700":mode,"text-violet-400":!mode})}>{con}</p>
                                 ))}
