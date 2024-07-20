@@ -16,11 +16,15 @@ const icons = [
     "mongodb",
     "redux",
 
-]
+];
+
+
+
+
 export default function HomeBanner() {
     const {mode,handleMode} = useModeContext()
     return (
-        <div className='relative h-screen '>
+        <div id='homeScroll' className='relative h-screen '>
            
             <div className={`${mode ? ' background-light' : ' background-black'} 'absolute grid grid-cols-1 md:grid-cols-2 px-3 pt-[26vh] h-full w-full'`} style={{ backgroundImage: 'url(/looper-pattern.svg)', backgroundAttachment: 'scroll',backgroundPosition:'center' }}>
                 <div className='col-span-1 mx-auto flex items-center'>

@@ -12,6 +12,7 @@ export interface ShimmerButtonProps
   children?: React.ReactNode;
 }
 
+
 const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
   (
     {
@@ -28,6 +29,7 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
   ) => {
     return (
       <button
+       
         style={
           {
             "--spread": "90deg",
@@ -52,6 +54,7 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
             "-z-30 blur-[2px]",
             "absolute inset-0 overflow-visible [container-type:size]",
           )}
+         
         >
           {/* spark */}
           <div className="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none]">

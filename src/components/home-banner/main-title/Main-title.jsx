@@ -8,6 +8,9 @@ import '../../../input.css'
 import 'animate.css';
 export default function MainTitle() {
   const {mode} = useModeContext()
+
+ 
+
   return (
     <div className='w-full text-center md:text-left animate__animated animate__bounceInLeft'>
         <div className='text-white text-4xl '>
@@ -20,7 +23,7 @@ export default function MainTitle() {
         </div>
         <p className={classNames('text-gray-300 font-light py-3 px-3 ',{'text-dark': mode })}>Estudiante de tecnicatura de desarollo de aplicaciones</p>
 
-        <ShimmerButton children='Ver mas' className='text-button'/>
+        <ShimmerButton onClick={scroll} id='sobremi' children='Ver mas' className='text-button'/>
     </div>
   )
 }

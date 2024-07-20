@@ -6,7 +6,7 @@ import ProyectosList from '../../components/proyectos/ProyectosList'
 export default function Proyectos() {
     const { mode } = useModeContext()
     return (
-        <div className='w-[90%] md:w-[70%] mx-auto text-center sm:text-left'>
+        <div id='proyectosScroll' className='w-[90%] md:w-[70%] mx-auto text-center sm:text-left'>
             <div>
                 <span className='text-[#bb87f3] font-semibold'>Proyectos</span>
 

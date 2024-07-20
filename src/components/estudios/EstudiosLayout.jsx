@@ -24,13 +24,12 @@ export default function EstudiosLayout() {
             {estudios.slice(0, visibleCount).map((item) => (
                 <article key={item.id} >
                     <div className="ps-2 my-2 first:mt-0">
-                        <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">
+                        <h3 className="text-xs font-medium uppercase text-left dark:text-neutral-400">
                             {item.title}
                         </h3>
                     </div>
 
                     <div className={classNames("flex gap-x-3 relative group rounded-lg",{"hover:bg-black/10":mode,"hover:bg-white/10":!mode})}>
-                        <a className="absolute inset-0 z-[1]" href="#"></a>
 
                         <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700 dark:group-hover:after:bg-neutral-600">
                             <div className="relative z-10 size-7 flex justify-center items-center">

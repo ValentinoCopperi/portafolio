@@ -8,7 +8,7 @@ import classNames from 'classnames';
 export default function SobreMi() {
   const {mode} = useModeContext()
   return (
-    <div className=' grid grid-cols-1 sm:grid-cols-2  w-full py-24 gap-x-28'>
+    <div id='sobremiScroll' className=' grid grid-cols-1 sm:grid-cols-2  w-full py-24 gap-x-28'>
       <div className='hidden col-span-1 md:flex justify-end items-center'>
         <img src="/profile.png" alt="Profile picture" className={classNames('w-[90%] sm:w-[70%] rounded-xl',{'bg-[#dededeef]':mode,'bg-[#0c010def]':!mode})} style={{ boxShadow: ' 10px 10px 15px rgba(0, 0, 0, 0.5)' }} />
       </div>
