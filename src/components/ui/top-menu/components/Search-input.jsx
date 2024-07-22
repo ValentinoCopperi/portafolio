@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function SearchInput() {
-    const links = ["Sobre mi", "Proyectos", "Estudios", "Certificaciones", "Contacto"];
+    const links = ["Sobre mi", "Proyectos", "Estudios", "Certificaciones"];
     const [query, setQuery] = useState("");
     const [matchQuery, setMatchQuery] = useState([]);
 

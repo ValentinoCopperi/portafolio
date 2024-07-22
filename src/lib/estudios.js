@@ -45,7 +45,7 @@ export const estudios = [
         id:8,
         title: "Node JS",
         desc : "Experiencia en con desarollo de APIs para proyectos con Node",
-        conocimientos : ["APIs","Rutas","Auth","Archivos","Async/Await","Testing","Manejo De Entornos"],
+        conocimientos : ["APIs","Nest","Rutas","Auth","JWT","Cookies","Testing","MVC"],
     },
     {
         id:8,
