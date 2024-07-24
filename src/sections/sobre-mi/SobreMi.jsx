@@ -10,7 +10,7 @@ export default function SobreMi() {
   return (
     <div id='sobremiScroll' className=' grid grid-cols-1 sm:grid-cols-2  w-full py-24 gap-x-28'>
       <div className='hidden col-span-1 md:flex justify-end items-center'>
-        <img src="/profile.png" alt="Profile picture" className={classNames('w-[90%] sm:w-[70%] rounded-xl',{'bg-[#dededeef]':mode,'bg-[#0c010def]':!mode})} style={{ boxShadow: ' 10px 10px 15px rgba(0, 0, 0, 0.5)' }} />
+        <img src="/profile_pic.png" alt="Profile picture" className={classNames('w-[90%] sm:w-[70%] rounded-xl',{'bg-[#dededeef]':mode,'bg-[#0c010def]':!mode})} style={{ boxShadow: ' 10px 10px 15px rgba(0, 0, 0, 0.5)' }} />
       </div>
       <div className='col-span-1 text-white text-center md:text-left w-full md:w-[65%]'>
         <span className='text-[#bb87f3] font-semibold'>Intro</span>
@@ -46,7 +46,7 @@ export default function SobreMi() {
         </div>
       </div>
       <div className='col-span-1 flex justify-center items-center sm:hidden'>
-        <img src="/profile.png" alt="Profile picture"  className={classNames('w-[90%] sm:w-[70%] rounded-xl',{'bg-[#dededeef]':mode,'bg-[#0c010def]':!mode})} style={{ boxShadow: ' 10px 10px 15px rgba(0, 0, 0, 0.5)' }} />
+        <img src="/profile_pic.png" alt="Profile picture"  className={classNames('w-[90%] sm:w-[70%] rounded-xl',{'bg-[#dededeef]':mode,'bg-[#0c010def]':!mode})} style={{ boxShadow: ' 10px 10px 15px rgba(0, 0, 0, 0.5)' }} />
       </div>
     </div>
   )
