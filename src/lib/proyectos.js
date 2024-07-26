@@ -5,8 +5,8 @@ export const proyectosList = [
         nombre:'Sky Level',
         desc: ' Demo de tienda online de ventas de productos gamer, donde el usuario podra registarse/loguearse y agregar productos a un carrito',
         img:'skylevel.png',
-        link:"https://skylevel-git-main-valentino-copperis-projects.vercel.app",
-        tecnologias : ['React','NodeJS','MongoDB','TailwindCss','Javascript']
+        link:"https://sky-level-frontend-react.vercel.app",
+        tecnologias : ['React','NodeJS','SQL','TailwindCss','Typescript']
     },
     {
         id:1,

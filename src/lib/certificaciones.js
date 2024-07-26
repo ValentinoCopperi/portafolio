@@ -9,10 +9,10 @@ export const certificaciones = [
     },
     {
         id:1,
-        data : "Curso",
-        title : "Desarollo Web",
-        place : "Coder House",
-        link : "https://www.coderhouse.com/ar/online/desarrollo-web-online",
+        data : "Bootcamp",
+        title : "Node JS + NEST",
+        place : "Codigo Facilito",
+        link : "https://codigofacilito.com/programas/javascript-backend",
         img : "coderhouse-logo.png"
     },
     {
@@ -35,18 +35,11 @@ export const certificaciones = [
     {
         id:4,
         data : "Curso",
-        title : "Tailwind CSS",
+        title : "Typescript",
         place : "Udemy",
-        link : "https://www.udemy.com/course/tailwind-css-el-curso-definitivo/?couponCode=LEADERSALE24B",
+        link : "https://www.udemy.com/course/typescript-guia-completa/",
         img : "udemy-logo.png"
     },
-    {
-        id:5,
-        data : "Curso",
-        title : "Node JS",
-        place : "Udemy",
-        link : "https://www.udemy.com/course/nodejs-guia-desde-cero/?couponCode=LEADERSALE24B",
-        img : "udemy-logo.png"
-    },
+   
     
 ]
