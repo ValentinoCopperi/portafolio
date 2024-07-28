@@ -13,16 +13,7 @@ export const certificaciones = [
         title : "Node JS + NEST",
         place : "Codigo Facilito",
         link : "https://codigofacilito.com/programas/javascript-backend",
-        img : "coderhouse-logo.png"
-    },
-    {
-        id:2,
-        data : "Curso",
-        title : "Desarollo Web",
-        place : "Unicen Tandil",
-        place : "Coder House",
-        link :"https://www.coderhouse.com/ar/online/javascript?pipe_source=google&pipe_medium=cpc&pipe_campaign=7.1&gclid=Cj0KCQjw0ruyBhDuARIsANSZ3wp9VwM7TYW88xHzTZrspdkABA9CwxefwM9Rwp_c6WL-tDWIa34EDVsaAvlaEALw_wcB",
-        img : "coderhouse-logo.png"
+        img : "codigofacilito.jpg"
     },
     {
         id:3,

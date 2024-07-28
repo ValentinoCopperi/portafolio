@@ -2,7 +2,7 @@ export const estudios = [
     {
         id:0,
         title: "Ingles - English",
-        desc : "Ingles intermedio-avanzado (B1) . Proximo a rendir First",
+        desc : "Ingles intermedio-avanzado (B1)",
         conocimientos: ["Comunicacion","Escritura","Redaccion"]
     },
     {
@@ -39,7 +39,7 @@ export const estudios = [
         id:7,
         title: "Next JS",
         desc : "Base solida de conocimientos en Next JS",
-        conocimientos : ["SSR","Optimizacion","SEO","Auth","Deploy"],
+        conocimientos : ["SSR","Optimizacion","SEO","Auth","Next UI"],
     },
     {
         id:8,

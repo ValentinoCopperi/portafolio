@@ -9,6 +9,15 @@ export const proyectosList = [
         tecnologias : ['React','NodeJS','SQL','TailwindCss','Typescript']
     },
     {
+        id:123,
+        date:'Apr 2024',
+        nombre : "Teslo-Shop",
+        desc : "Web de venta de ropa online , copia de teslo-shop.",
+        img:'teslo.png',
+        link:"https://github.com/ValentinoCopperi/teslo-shop",
+        tecnologias:['Next',"Firebase","TailwindCss","Javascript"]
+    },
+    {
         id:1,
         date:'Dec 20 2023',
         nombre:'Todo App',
