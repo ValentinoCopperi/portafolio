@@ -1,7 +1,7 @@
 export const estudios = [
     {
         id:0,
-        title: "Ingles - English",
+        title: "Ingles",
         desc : "Ingles intermedio-avanzado (B1)",
         conocimientos: ["Comunicacion","Escritura","Redaccion"]
     },
@@ -21,13 +21,13 @@ export const estudios = [
         id:3,
         title: "Tailwind CSS",
         desc : "Solidos conocimientos en el framework css mas utilizado Tailwind CSS",
-        conocimientos : ["Modo Oscuro","Plugins","Optimizacion"],
+        conocimientos : ["Modo Oscuro","Plugins","Optimizacion","Diseño"],
     },
     {
         id:4,
-        title: "Javascript",
-        desc : "Sólida comprensión de JavaScript",
-        conocimientos : ["Sintaxis","POO","DOM","Eventos","JSON","AJAX","AXIOS","APIs","Arrays"],
+        title: "Typescript",
+        desc : "Sólida comprensión de Typescript",
+        conocimientos : [""],
     },
     {
         id:6,
@@ -43,15 +43,15 @@ export const estudios = [
     },
     {
         id:8,
-        title: "Node JS",
+        title: "Node JS & Nest",
         desc : "Experiencia en con desarollo de APIs para proyectos con Node",
-        conocimientos : ["APIs","Nest","Rutas","Auth","JWT","Cookies","Testing","MVC"],
+        conocimientos : ["APIs","Auth","JWT","Cookies","Testing","MVC","Webhooks","Websockets"],
     },
     {
         id:8,
         title: "MongoDB",
-        desc : "Cocimientos basicos en el uso MongoDB",
-        conocimientos : ["CRUD"],
+        desc : "Implemetacion de mongo DB en distintos proyectos",
+        conocimientos : ["CRUD","Agregaciones","Indexacion","Sets"],
     },
     {
         id:9,
@@ -63,7 +63,7 @@ export const estudios = [
         id:10,
         title: "Extras",
         desc : "Tecnologias aprendidas e implementadas extras",
-        conocimientos : ["Java (Basico)","Php (Basico)","Firebase","Librerias De Componentes","Vercel","Github"],
+        conocimientos : ["Java (Basico)","Php (Basico)","Firebase","GraphQl","Docker","Vercel","Github"],
     },
 
 ]

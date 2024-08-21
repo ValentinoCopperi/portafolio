@@ -15,8 +15,8 @@ export default function SobreMi() {
       <div className='col-span-1 text-white text-center md:text-left w-full md:w-[65%]'>
         <span className='text-[#bb87f3] font-semibold'>Intro</span>
         <h1 className={classNames('text-5xl py-2 pb-8 font-semibold',{'text-black':mode,'text-white':!mode})}>Sobre mi</h1>
-        <p className={classNames({'text-black':mode,'text-white':!mode})}>¡Hola! Mi nombre es Valentino y me apasiona la computación desde que era pequeño. Actualmente, estudio en la Universidad Nacional del Centro de la Provincia de Buenos Aires, donde estoy cursando la Tecnicatura en Desarrollo de Aplicaciones Informáticas.</p>
-        <p className={classNames('py-3',{'text-black':mode,'text-white':!mode})}> Mi formación académica me ha brindado una sólida base teórica, pero mi entusiasmo por la tecnología me ha llevado a prepararme aún más fuera de la universidad. He tomado numerosos cursos y he aprendido de forma autodidacta, siempre enfocado en la creación de aplicaciones con tecnologías modernas como React, Next.js, Tailwind CSS y Node.js.</p>
+        <p className={classNames({'text-black':mode,'text-white':!mode})}>¡Hola! Mi nombre es Valentino . Actualmenteestudio en la Universidad Nacional del Centro de la Provincia de Buenos Aires, donde estoy cursando segundo año de la tecnicatura en Desarrollo de Aplicaciones Informáticas.</p>
+        <p className={classNames('py-3',{'text-black':mode,'text-white':!mode})}> Mi formación académica me ha brindado una sólida base teórica. He tomado numerosos cursos y he aprendido de forma autodidacta, enfocado en la creación de aplicaciones con tecnologías modernas.</p>
         <div className={classNames('py-6',{'text-black':mode,'text-white':!mode})}>
           <div className='flex'>
             <div className='flex'>
