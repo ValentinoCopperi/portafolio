@@ -26,14 +26,6 @@ export const proyectosList = [
         link:"https://todo-app-fullstack-ihxi.onrender.com",
         tecnologias : ['React','NodeJS','MongoDB','TailwindCss','Javascript']
     },
-    {
-        id:3,
-        date:'Nov 20 2023',
-        nombre:'Firebase E-Commerce Project',
-        desc: 'Proyecto de tienda de ropa clasico creado con react y firebase . Practicas de React',
-        img:'firebase-ecomerce.png',
-        link:"https://react-project-ed047.firebaseapp.com/home",
-        tecnologias : ['React','TawilwindCss','Javascript','Firebase']
-    },
+   
     
 ]
