@@ -22,7 +22,7 @@ const icons = [
 
 
 export default function HomeBanner() {
-    const {mode,handleMode} = useModeContext()
+    const {mode} = useModeContext()
     return (
         <div id='homeScroll' className='relative h-screen '>
            
