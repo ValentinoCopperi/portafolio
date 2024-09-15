@@ -1,28 +1,6 @@
 export const estudios = [
-    {
-        id:0,
-        title: "Ingles",
-        desc : "Ingles intermedio-avanzado (B1)",
-        conocimientos: ["Comunicacion","Escritura","Redaccion"]
-    },
-    {
-        id:1,
-        title: "HTML",
-        desc : "Conocimientos solidos en HTML5",
-        conocimientos : ["HTML Semantico","Listas","Tablas","Multimedia","Formularios","Enlaces y Navegacion"],
-    },
-    {
-        id:2,
-        title: "CSS",
-        desc : "Conocimiento avanzado de CSS",
-        conocimientos : ["Diseño","Maquetacion","Box Model","Flexbox y Grid","Responsive","Animaciones y Transiciones"],
-    },
-    {
-        id:3,
-        title: "Tailwind CSS",
-        desc : "Solidos conocimientos en el framework css mas utilizado Tailwind CSS",
-        conocimientos : ["Modo Oscuro","Plugins","Optimizacion","Diseño"],
-    },
+   
+
     {
         id:4,
         title: "Typescript",
@@ -58,6 +36,12 @@ export const estudios = [
         title: "Bases De Datos Relacionales",
         desc : "Tengo experiencia en el manejo y administración de bases de datos relacionales",
         conocimientos : ["SQL","Consultas Avanzadas","Procedimientos","Triggers","Modelado De Datos","Vistas","Optimizacion"],
+    },
+    {
+        id:3,
+        title: "Tailwind CSS",
+        desc : "Solidos conocimientos en el framework css mas utilizado Tailwind CSS",
+        conocimientos : ["Modo Oscuro","Plugins","Optimizacion","Diseño"],
     },
     {
         id:10,

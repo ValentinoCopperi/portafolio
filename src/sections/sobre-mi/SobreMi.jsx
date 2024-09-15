@@ -5,6 +5,7 @@ import FlagIcon from '@mui/icons-material/Flag';
 import { EmailOutlined } from '@mui/icons-material';
 import { useModeContext } from './../../context/mode/Mode';
 import classNames from 'classnames';
+import EmailLink from '../../components/sobre-mi/EmailLink';
 export default function SobreMi() {
   const {mode} = useModeContext()
   return (
@@ -24,14 +25,7 @@ export default function SobreMi() {
             <span className='mx-2'>:</span>
             <p>Valentino Copperi</p>
           </div>
-          <div className='flex py-2 mx-3'>
-            <div className='flex'>
-              <EmailOutlined className='text-[#bb87f3]' />
-              <p className='ml-1'>Email</p>
-            </div>
-            <span className='mx-2'>:</span>
-            <p>valencope100@gmail.com</p>
-          </div>
+          <EmailLink email="valencope100@gmail.com" />
           <div className='flex'>
             <div className='flex'>
               <FlagIcon className='text-[#bb87f3]' />
