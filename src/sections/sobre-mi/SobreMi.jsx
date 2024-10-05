@@ -12,7 +12,7 @@ export default function SobreMi() {
   const { mode } = useModeContext();
   const { idioma } = useIdiomaContext();
 
-  
+
   const texts = {
     'SP': {
       intro: 'Intro',
@@ -50,33 +50,29 @@ export default function SobreMi() {
         <p className={classNames('py-3', { 'text-black': mode, 'text-white': !mode })}>
           {texts[idioma]?.education}
         </p>
+
         <div className={classNames('py-6 flex flex-col text-xl justify-center items-center md:flex-row', { 'text-black': mode, 'text-white': !mode })}>
-          <div className='flex'>
-            <div className='flex'>
-              <PersonIcon className='text-[#bb87f3]' />
-              <p className='ml-1'>{texts[idioma].name}</p>
-            </div>
-            <span className='mx-3'>:</span>
-            <p>Valentino Copperi</p>
+          <div className='flex items-center mb-2 md:mb-0'>
+            <PersonIcon className='text-[#bb87f3]' />
+            <p className='ml-2'>{texts[idioma].name}:</p>
+            <p className='ml-1'>Valentino Copperi</p>
           </div>
-          <EmailLink email="valencope100@gmail.com" />
-          <div className='flex'>
-            <div className='flex'>
-              <FlagIcon className='text-[#bb87f3]' />
-              <p className='ml-1'>{texts[idioma]?.country}</p>
-            </div>
-            <span className='mx-2'>:</span>
-            <p>{texts[idioma]?.argentina}</p>
+
+          <EmailLink email="valencope100@gmail.com" className="mb-2 md:mb-0" />
+
+          <div className='flex items-center mb-2 md:mb-0'>
+            <FlagIcon className='text-[#bb87f3]' />
+            <p className='ml-2'>{texts[idioma]?.country}:</p>
+            <p className='ml-1'>{texts[idioma]?.argentina}</p>
           </div>
-          <div className='flex mx-2 my-1'>
-            <div className='flex'>
-              <LanguagesIcon className='text-[#bb87f3]' />
-              <p className='ml-1'>English</p>
-            </div>
-            <span className='mx-2'>:</span>
-            <p>B2 Level</p>
+
+          <div className='flex items-center'>
+            <LanguagesIcon className='text-[#bb87f3]' />
+            <p className='ml-2'>English:</p>
+            <p className='ml-1'>B2 Level</p>
           </div>
         </div>
+        
       </div>
     </div>
   );
