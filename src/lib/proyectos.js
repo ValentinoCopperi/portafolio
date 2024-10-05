@@ -69,6 +69,43 @@ export const proyectosListSp = [
             },
         ],
     },
+
+    {
+        id: 1,
+        date: 'Nov 20 2023',
+        nombre: 'E-Commerce de Productos de Computadoras',
+        stack: 'Full Stack',
+        desc: 'Aplicación de e-commerce para la venta de productos de computadoras, construida con React, TailwindCSS, PostgreSQL y Express. Permite a los usuarios explorar, comprar y gestionar productos de manera eficiente.',
+        img: 'skylevel.png',
+        link: "https://sky-level-frontend-react.vercel.app/",
+        tecnologias: ['React', 'TailwindCSS', 'PostgreSQL', 'Express'],
+        detalles: [
+            {
+                titulo: 'Interfaz de Usuario',
+                descripcion: 'La interfaz está diseñada con TailwindCSS, brindando una experiencia de usuario atractiva y responsiva.',
+            },
+            {
+                titulo: 'Base de Datos',
+                descripcion: 'PostgreSQL se utiliza para almacenar información sobre los productos y gestionar las transacciones de manera segura.',
+            },
+            {
+                titulo: 'API REST',
+                descripcion: 'Se implementa una API REST utilizando Express para manejar las operaciones de productos, como agregar, actualizar y eliminar.',
+            },
+            {
+                titulo: 'Autenticación de Usuarios',
+                descripcion: 'El sistema incluye autenticación de usuarios para asegurar que solo los usuarios registrados puedan realizar compras.',
+            },
+            {
+                titulo: 'Carrito de Compras',
+                descripcion: 'Los usuarios pueden agregar productos a su carrito y proceder al pago de manera sencilla.',
+            },
+            {
+                titulo: 'Responsividad',
+                descripcion: 'La aplicación está diseñada para ser completamente responsiva, adaptándose a diferentes tamaños de pantalla.',
+            },
+        ],
+    },
     
 ];
 
@@ -140,6 +177,43 @@ export const proyectosListEn = [
             {
                 titulo: 'Notifications',
                 descripcion: 'The real-time notification system, implemented with WebSockets, informs users about relevant interactions, such as new comments or likes on their tasks, enhancing collaboration and engagement in teamwork.',
+            },
+        ],
+    },
+
+    {
+        id: 1,
+        date: 'Nov 20 2023',
+        nombre: 'E-Commerce of Computer Products',
+        stack: 'Full Stack',
+        desc: 'E-commerce application for selling computer products, built with React, TailwindCSS, PostgreSQL, and Express. Allows users to explore, purchase, and manage products efficiently.',
+        img: 'skylevel.png',
+        link: "https://sky-level-frontend-react.vercel.app/",
+        tecnologias: ['React', 'TailwindCSS', 'PostgreSQL', 'Express'],
+        detalles: [
+            {
+                titulo: 'User Interface',
+                descripcion: 'The interface is designed using TailwindCSS, providing an attractive and responsive user experience.',
+            },
+            {
+                titulo: 'Database',
+                descripcion: 'PostgreSQL is used to store product information and manage transactions securely.',
+            },
+            {
+                titulo: 'REST API',
+                descripcion: 'A REST API is implemented using Express to handle product operations, such as adding, updating, and deleting.',
+            },
+            {
+                titulo: 'User Authentication',
+                descripcion: 'The system includes user authentication to ensure that only registered users can make purchases.',
+            },
+            {
+                titulo: 'Shopping Cart',
+                descripcion: 'Users can add products to their cart and proceed to checkout easily.',
+            },
+            {
+                titulo: 'Responsiveness',
+                descripcion: 'The application is designed to be fully responsive, adapting to different screen sizes.',
             },
         ],
     },
