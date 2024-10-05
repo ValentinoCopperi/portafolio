@@ -1,31 +1,147 @@
-export const proyectosList = [
+export const proyectosListSp = [
     {
-        id:0,
-        date:'En proceso...',
-        nombre:'Sky Level',
-        desc: ' Demo de tienda online de ventas de productos gamer, donde el usuario podra registarse/loguearse y agregar productos a un carrito',
-        img:'skylevel.png',
-        link:"https://sky-level-frontend-react.vercel.app",
-        tecnologias : ['React','NodeJS','SQL','TailwindCss','Typescript']
+        id: 3,
+        date: 'Apr 23 2024',
+        nombre: 'Task App',
+        stack: 'Frontend',
+        desc: 'Aplicación red social de tareas construida en Next.js y TypeScript. Permite a los usuarios gestionar sus tareas de manera eficiente, con una interfaz moderna y responsiva.',
+        img: 'taskapp.png',
+        link: "https://task-app-valentinocopperi.vercel.app/",
+        tecnologias: ['Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB'],
+        detalles: [
+            {
+                titulo: 'TailwindCSS',
+                descripcion: 'La interfaz está diseñada utilizando TailwindCSS, proporcionando una experiencia de usuario fluida y atractiva.',
+            },
+            {
+                titulo: 'MongoDB',
+                descripcion: 'MongoDB se utiliza para almacenar información de tareas, garantizando una gestión eficiente de los datos.',
+            },
+            {
+                titulo: 'Server Actions',
+                descripcion: 'Se implementan Server Actions para manejar la lógica del lado del servidor y mejorar el rendimiento de la aplicación.',
+            },
+            {
+                titulo: 'Paginación',
+                descripcion: 'La aplicación incluye paginación para facilitar la navegación a través de una lista extensa de tareas.',
+            },
+            {
+                titulo: 'Server Components',
+                descripcion: 'Se utilizan Server Components para la renderización del lado del servidor, optimizando el tiempo de carga y mejorando la experiencia del usuario.',
+            },
+            {
+                titulo: 'Client Components',
+                descripcion: 'Los Client Components permiten interacciones dinámicas en el lado del cliente, mejorando la interactividad de la aplicación.',
+            },
+            {
+                titulo: 'Generación Estática',
+                descripcion: 'La generación estática se utiliza para prerenderizar páginas, mejorando el rendimiento y la SEO de la aplicación.',
+            },
+        ],
     },
     {
-        id:123,
-        date:'Apr 2024',
-        nombre : "Teslo-Shop",
-        desc : "Web de venta de ropa online , copia de teslo-shop.",
-        img:'teslo.png',
-        link:"https://github.com/ValentinoCopperi/teslo-shop",
-        tecnologias:['Next',"Firebase","TailwindCss","Javascript"]
+        id: 2,
+        date: 'May 15 2024',
+        nombre: 'Task Manager Pro',
+        stack: 'Backend',
+        desc: 'Aplicación avanzada de gestión de tareas con funcionalidades sociales. Incluye autenticación, CRUD de tareas, sistema de likes y comentarios, y notificaciones en tiempo real.',
+        img: 'apinest.png',
+        link: "https://github.com/ValentinoCopperi/NestJs-TaskApi",
+        tecnologias: ['NestJS', 'TypeScript', 'MongoDB', 'WebSockets', 'JWT'],
+        detalles: [
+            {
+                titulo: 'Autenticación',
+                estrategia: 'JWT',
+                guard: 'AuthGuard',
+                descripcion: 'La aplicación utiliza JSON Web Tokens para la autenticación. Los usuarios deben iniciar sesión para recibir un token que les permitirá realizar operaciones en rutas protegidas. La estrategia de autenticación asegura que solo los usuarios válidos puedan acceder a las funciones de la aplicación.',
+            },
+            {
+                titulo: 'CRUD',
+                descripcion: 'Las operaciones CRUD están implementadas para las tareas, permitiendo a los usuarios crear nuevas tareas, leer (listar) sus tareas existentes, actualizar detalles de tareas y eliminar tareas que ya no son necesarias.',
+            },
+            {
+                titulo: 'Sistema Social',
+                descripcion: 'Los usuarios pueden dar "me gusta" y "comentarios" a las tareas de otros usuarios.',
+            },
+            {
+                titulo: 'Notificaciones',
+                descripcion: 'El sistema de notificaciones en tiempo real, implementado con WebSockets, informa a los usuarios sobre interacciones relevantes, como nuevos comentarios o likes en sus tareas, lo que mejora la colaboración y el compromiso en el trabajo en equipo.',
+            },
+        ],
     },
-    {
-        id:1,
-        date:'Dec 20 2023',
-        nombre:'Todo App',
-        desc: 'Todo app para practicas . Aplicacion crud donde perimite registrar,editar,eliminar tareas almacenadas en una base de datos',
-        img:'todoapp.png',
-        link:"https://todo-app-fullstack-ihxi.onrender.com",
-        tecnologias : ['React','NodeJS','MongoDB','TailwindCss','Javascript']
-    },
-   
     
-]
+];
+
+export const proyectosListEn = [
+    {
+        id: 3,
+        date: 'Apr 23 2024',
+        nombre: 'Task App',
+        stack: 'Frontend',
+        desc: 'Task social media application built with Next.js and TypeScript. It allows users to efficiently manage their tasks with a modern and responsive interface.',
+        img: 'taskapp.png',
+        link: "https://task-app-valentinocopperi.vercel.app/",
+        tecnologias: ['Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB'],
+        detalles: [
+            {
+                titulo: 'TailwindCSS',
+                descripcion: 'The interface is designed using TailwindCSS, providing a smooth and attractive user experience.',
+            },
+            {
+                titulo: 'MongoDB',
+                descripcion: 'MongoDB is used to store task data, ensuring efficient data management.',
+            },
+            {
+                titulo: 'Server Actions',
+                descripcion: 'Server Actions are implemented to handle server-side logic and improve the performance of the application.',
+            },
+            {
+                titulo: 'Pagination',
+                descripcion: 'The application includes pagination to facilitate navigation through an extensive list of tasks.',
+            },
+            {
+                titulo: 'Server Components',
+                descripcion: 'Server Components are used for server-side rendering, optimizing load times and improving the user experience.',
+            },
+            {
+                titulo: 'Client Components',
+                descripcion: 'Client Components allow dynamic client-side interactions, enhancing the app’s interactivity.',
+            },
+            {
+                titulo: 'Static Generation',
+                descripcion: 'Static generation is used to pre-render pages, improving the performance and SEO of the application.',
+            },
+        ],
+    },
+    {
+        id: 2,
+        date: 'May 15 2024',
+        nombre: 'Task Manager Pro',
+        stack: 'Backend',
+        desc: 'Advanced task management application with social features. Includes authentication, task CRUD operations, a like and comment system, and real-time notifications.',
+        img: 'apinest.png',
+        link: "https://github.com/ValentinoCopperi/NestJs-TaskApi",
+        tecnologias: ['NestJS', 'TypeScript', 'MongoDB', 'WebSockets', 'JWT'],
+        detalles: [
+            {
+                titulo: 'Authentication',
+                estrategia: 'JWT',
+                guard: 'AuthGuard',
+                descripcion: 'The application uses JSON Web Tokens for authentication. Users must log in to receive a token, which allows them to perform operations on protected routes. The authentication strategy ensures that only valid users can access the app’s features.',
+            },
+            {
+                titulo: 'CRUD',
+                descripcion: 'CRUD operations are implemented for tasks, allowing users to create new tasks, read (list) their existing tasks, update task details, and delete tasks that are no longer needed.',
+            },
+            {
+                titulo: 'Social System',
+                descripcion: 'Users can "like" and "comment" on tasks created by other users.',
+            },
+            {
+                titulo: 'Notifications',
+                descripcion: 'The real-time notification system, implemented with WebSockets, informs users about relevant interactions, such as new comments or likes on their tasks, enhancing collaboration and engagement in teamwork.',
+            },
+        ],
+    },
+    
+];
