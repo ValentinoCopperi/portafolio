@@ -120,7 +120,7 @@ export default function ProyectosList() {
                     <button
                         onClick={handleLoadMore}
                         className={classNames(
-                            'px-6 py-2 rounded-full transition-colors duration-300 font-semibold text-sm sm:text-base',
+                            'px-8 py-4 rounded-full transition-colors duration-300 font-semibold text-xl sm:text-base',
                             { 'bg-violet-600 hover:bg-violet-700 text-white': mode, 'bg-[#bb87f3] hover:bg-[#a76df0] text-white': !mode }
                         )}
                     >
