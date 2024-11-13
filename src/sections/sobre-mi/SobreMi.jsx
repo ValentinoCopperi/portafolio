@@ -35,7 +35,7 @@ export default function SobreMi() {
   };
 
   return (
-    <div id='sobremiScroll' className='grid grid-cols-1 w-full py-24 mx-auto md:w-[60%]'>
+    <div id='sobremiScroll' className='grid grid-cols-1 w-full py-24 mx-auto md:w-[80%]'>
       <div className='col-span-1 text-white text-center w-full'>
         <span className='text-[#bb87f3] font-semibold'>{texts[idioma]?.intro}</span>
         <h1 className={classNames('text-5xl py-2 pb-8 font-semibold', { 'text-black': mode, 'text-white': !mode })}>

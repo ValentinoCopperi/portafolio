@@ -3,12 +3,13 @@ import { useModeContext } from '../../context/mode/Mode';
 import classNames from 'classnames';
 import { useIdiomaContext } from './../../context/idioma/Idioma-Context';
 import { proyectosListEn, proyectosListSp } from '../../lib/proyectos.js';
+import { ArrowRight, BookOpen, Brain, Pencil, VolumeX } from 'lucide-react';
 
 export default function ProyectosList() {
     const { mode } = useModeContext();
     const { idioma } = useIdiomaContext();
     const [activeProject, setActiveProject] = useState(null);
-    const [visibleProjects, setVisibleProjects] = useState(3);
+    const [visibleProjects, setVisibleProjects] = useState(2);
     const [proyectos, setProyectos] = useState(proyectosListEn); // Inicializar el estado vacío
 
     // Selecciona la lista de proyectos según el idioma
@@ -16,6 +17,19 @@ export default function ProyectosList() {
         // Actualiza la lista de proyectos al cambiar el idioma
         setProyectos(idioma === 'SP' ? proyectosListSp : proyectosListEn);
     }, [idioma]);
+
+    const getIcon = (stack) => {
+        switch (stack.toLowerCase()) {
+            case 'frontend':
+                return <BookOpen className="w-8 h-8" />;
+            case 'backend':
+                return <Brain className="w-8 h-8" />;
+            case 'full stack':
+                return <Pencil className="w-8 h-8" />;
+            default:
+                return <VolumeX className="w-8 h-8" />;
+        }
+    };
 
     const handleProjectClick = (id) => {
         setActiveProject(activeProject === id ? null : id);
@@ -26,97 +40,95 @@ export default function ProyectosList() {
     };
 
     return (
-        <>
-            <div className="flex flex-col space-y-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div>
+
+            <div className='space-y-16'>
                 {proyectos.slice(0, visibleProjects).map((proyecto) => (
                     <article
                         key={proyecto.id}
                         className={classNames(
-                            'group relative rounded-xl transition-all duration-500 ease-in-out',
-                            'hover:shadow-2xl hover:scale-[1.02]',
-                            'cursor-pointer h-[400px] sm:h-[500px] md:h-[600px]',
-                            { 'bg-white text-gray-800': mode, 'bg-gray-800 text-white': !mode },
-                            'border border-gray-200 dark:border-gray-700'
+                            'bg-[#fbfcfc] shadow-lg w-3/4 mx-auto rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-xl',
+                            { 'light-proyecto-bg': mode, 'dark-proyecto-bg': !mode }
                         )}
-                        onClick={() => handleProjectClick(proyecto.id)}
                     >
-                        <div className="h-full w-full overflow-hidden">
+                        <div className='aspect-video w-full overflow-hidden'>
                             <img
                                 src={`/proyectos/${proyecto.img}`}
                                 alt={proyecto.nombre}
-                                loading="lazy"
-                                className="h-full w-full object-cover object-center transition-all duration-500 ease-in-out group-hover:scale-110"
+                                className='w-full h-full object-cover object-center'
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-6 text-white transition-opacity duration-300">
-                                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">{proyecto.nombre}</h2>
-                                <p className="text-sm sm:text-base font-semibold text-blue-300 mb-1">{proyecto.stack}</p>
-                                <p className="text-sm sm:text-base opacity-75">{proyecto.date}</p>
-                            </div>
                         </div>
-
-                        <div
-                            className={classNames(
-                                "absolute overflow-auto inset-0 bg-black bg-opacity-90 text-white flex flex-col justify-start items-start p-6 transition-all duration-500 ease-in-out",
-                                {
-                                    "translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100": !activeProject || activeProject !== proyecto.id,
-                                    "translate-y-0 opacity-100": activeProject === proyecto.id
-                                }
-                            )}
-                        >
-                            <h2 className="text-2xl sm:text-3xl md:text-4xl text-violet-400 font-bold mb-1">{proyecto.nombre}</h2>
-                            <p className="text-sm sm:text-base font-semibold text-blue-300 mb-1">{proyecto.stack}</p>
-                            <p className="text-sm sm:text-base mb-2">{proyecto.date}</p>
-                            <p className="text-sm sm:text-base md:text-lg mb-4">{proyecto.desc}</p>
-
-                            <div>
-                                <h3 className='text-3xl font-semibold'>Detalles:</h3>
-                                {proyecto.detalles.map((detalle, index) => (
-                                    <div key={index}>
-                                        <h4 className='py-2 text-2xl text-violet-600 font-semibold'>{detalle.titulo}</h4>
-                                        {detalle.estrategia && <p>Estrategia: {detalle.estrategia}</p>}
-                                        {detalle.guard && <p>Guard: {detalle.guard}</p>}
-                                        <p>{detalle.descripcion}</p>
-                                    </div>
-                                ))}
+                        <div className='p-6 md:p-8'>
+                            <div className='flex items-center justify-between mb-4'>
+                                <h2 className={classNames('text-3xl font-bold', { 'text-black': mode, 'text-white': !mode })}>
+                                    {proyecto.nombre}
+                                </h2>
+                                <span className={classNames('text-sm font-medium px-3 py-1 rounded-full', { 'bg-violet-100 text-violet-800': mode, 'bg-violet-800 text-violet-100': !mode })}>
+                                    {proyecto.stack}
+                                </span>
                             </div>
-
-                            <div className="mb-4">
-                                <h3 className="text-lg sm:text-xl font-semibold mb-2">Tecnologías:</h3>
-                                <div className="flex flex-wrap gap-2">
+                            <p className={classNames('text-lg mb-6', { 'text-gray-700': mode, 'text-gray-300': !mode })}>
+                                {proyecto.desc}
+                            </p>
+                            <div className='mb-6'>
+                                <h3 className={classNames('text-xl font-semibold mb-2', { 'text-black': mode, 'text-white': !mode })}>
+                                    {idioma === "SP" ? "Tecnologías:" : "Technologies:"}
+                                </h3>
+                                <div className='flex flex-wrap gap-2'>
                                     {proyecto.tecnologias.map((tech, index) => (
-                                        <span key={index} className="px-3 py-1 bg-white bg-opacity-20 text-white text-xs sm:text-sm rounded-full transition-colors duration-300 hover:bg-opacity-30">
+                                        <span key={index} className='px-3 py-1 bg-[#bb87f3] text-white rounded-full text-sm'>
                                             {tech}
                                         </span>
                                     ))}
                                 </div>
                             </div>
-
-                            <a
-                                href={proyecto.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="mt-auto px-6 py-2 bg-white text-blue-600 rounded-md hover:bg-opacity-90 transition-colors duration-300 font-semibold text-sm sm:text-base"
-                            >
-                                Ver Proyecto
-                            </a>
-                        </div>
-
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-xl sm:text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded-full opacity-0 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none">
-                            {window.innerWidth > 768 ? 'HOVER ME' : 'CLICK ME'}
+                            <div className='mb-6'>
+                                <h3 className={classNames('text-xl font-semibold mb-2', { 'text-black': mode, 'text-white': !mode })}>
+                                    {idioma === "SP" ? "Detalles:" : "Details:"}
+                                </h3>
+                                <ul className='list-disc pl-5 space-y-2'>
+                                    {proyecto.detalles.map((detalle, index) => (
+                                        <li key={index} className={classNames('text-base', { 'text-gray-700': mode, 'text-gray-300': !mode })}>
+                                            <strong>{detalle.titulo}:</strong> {detalle.descripcion}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className='flex justify-end'>
+                                <a
+                                    href={proyecto.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={classNames(
+                                        'px-6 py-2 rounded-full flex items-center justify-center transition-colors duration-300 text-white',
+                                        { 'bg-violet-600 hover:bg-violet-700': mode, 'bg-[#bb87f3] hover:bg-[#a76df0]': !mode }
+                                    )}
+                                >
+                                    {idioma === "SP" ? "Ver Proyecto" : "View Project"}
+                                    <ArrowRight className="ml-2 w-4 h-4" />
+                                </a>
+                            </div>
                         </div>
                     </article>
                 ))}
             </div>
+
+
+
             {visibleProjects < proyectos.length && (
                 <div className="flex justify-center mt-8">
                     <button
                         onClick={handleLoadMore}
-                        className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300 font-semibold text-sm sm:text-base"
+                        className={classNames(
+                            'px-6 py-2 rounded-full transition-colors duration-300 font-semibold text-sm sm:text-base',
+                            { 'bg-violet-600 hover:bg-violet-700 text-white': mode, 'bg-[#bb87f3] hover:bg-[#a76df0] text-white': !mode }
+                        )}
                     >
-                        Ver más
+                        {idioma === "SP" ? "Ver más" : "Load More"}
                     </button>
                 </div>
             )}
-        </>
+
+        </div>
     );
 }

@@ -1,5 +1,21 @@
 export const proyectosListSp = [
     {
+        id : 7,
+        date : "Feb 20 2024",
+        nombre : "English Quiz App",
+        stack : "Frontend",
+        desc : "Aplicacion para aprender y mejorar ingles para niveles principiantes,intermedios y avanzados , con disintos topicos disponibles",
+        img : "english.png",
+        link : "https://english-app-alpha.vercel.app",
+        tecnologias : ['Next JS' , 'TailwindCSS'],
+        detalles : [
+            {
+                titulo : "Cookies",
+                descripcion : "Se guarda el progeso de cada topico en cookies"
+            }
+        ]
+    },
+    {
         id: 3,
         date: 'Apr 23 2024',
         nombre: 'Task App',
@@ -39,6 +55,7 @@ export const proyectosListSp = [
             },
         ],
     },
+    
     {
         id: 2,
         date: 'May 15 2024',
@@ -110,6 +127,23 @@ export const proyectosListSp = [
 ];
 
 export const proyectosListEn = [
+
+    {
+        id : 7,
+        date : "Feb 20 2024",
+        nombre : "English Quiz App",
+        stack : "Frontend",
+        desc : "App that will help you to learn and improve your English level",
+        img : "english.png",
+        link : "https://english-app-alpha.vercel.app",
+        tecnologias : ['Next JS' , 'TailwindCSS'],
+        detalles : [
+            {
+                titulo : "Cookies",
+                descripcion : "The progress of each topic is saved in cookies."
+            }
+        ]
+    },
     {
         id: 3,
         date: 'Apr 23 2024',
