@@ -18,7 +18,7 @@ export const proyectosListSp = [
     {
         id: 3,
         date: 'Apr 23 2024',
-        nombre: 'Task App',
+        nombre: 'Twitter App',
         stack: 'Frontend',
         desc: 'Aplicación red social de tareas construida en Next.js y TypeScript. Permite a los usuarios gestionar sus tareas de manera eficiente, con una interfaz moderna y responsiva.',
         img: 'taskapp.png',
@@ -147,9 +147,9 @@ export const proyectosListEn = [
     {
         id: 3,
         date: 'Apr 23 2024',
-        nombre: 'Task App',
+        nombre: 'Twitter App',
         stack: 'Frontend',
-        desc: 'Task social media application built with Next.js and TypeScript. It allows users to efficiently manage their tasks with a modern and responsive interface.',
+        desc: 'Twitter social media application built with Next.js and TypeScript. It allows users to efficiently manage their tasks with a modern and responsive interface.',
         img: 'taskapp.png',
         link: "https://task-app-valentinocopperi.vercel.app/",
         tecnologias: ['Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB'],
@@ -187,9 +187,9 @@ export const proyectosListEn = [
     {
         id: 2,
         date: 'May 15 2024',
-        nombre: 'Task Manager Pro',
+        nombre: 'Twitter Manager Api',
         stack: 'Backend',
-        desc: 'Advanced task management application with social features. Includes authentication, task CRUD operations, a like and comment system, and real-time notifications.',
+        desc: 'Advanced twitter management application with social features. Includes authentication, task CRUD operations, a like and comment system, and real-time notifications.',
         img: 'apinest.png',
         link: "https://github.com/ValentinoCopperi/NestJs-TaskApi",
         tecnologias: ['NestJS', 'TypeScript', 'MongoDB', 'WebSockets', 'JWT'],
