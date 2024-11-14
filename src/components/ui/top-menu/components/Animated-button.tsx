@@ -9,7 +9,8 @@ export default function AnimatedGradientText({
   className?: string;
 }) {
   return (
-    <div
+    <a
+      target='_blank' href='https://www.linkedin.com/in/valentinocopperi/' 
       className={cn(
         "group relative flex max-w-fit flex-row items-center justify-center rounded-2xl  px-4 py-1.5 text-sm font-medium shadow-[inset_0_-8px_10px_#8fdfff1f] backdrop-blur-sm transition-all duration-500 cursor-pointer ease-out [--bg-size:300%] hover:shadow-[inset_0_-5px_10px_#8fdfff3f] hover:bg-[#2e2e2ef5]  ",
         className,
@@ -21,6 +22,6 @@ export default function AnimatedGradientText({
 
       {children}
       <ArrowCircleRightOutlined style={{fontSize:20}} className="ml-1" />
-    </div>
+    </a>
   );
 }

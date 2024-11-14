@@ -1,101 +1,202 @@
+
 export const estudiosEn = [
     {
-        id: 4,
-        title: "Typescript",
-        desc: "Solid understanding of Typescript, including types, interfaces, and the ability to implement more structured and maintainable code.",
-        conocimientos: [""],
+        id: 1,
+        title: "TypeScript",
+        desc: "Deep understanding of TypeScript's type system and advanced features for building scalable applications",
+        conocimientos: [
+            "Types & Interfaces",
+            "Generics",
+            "Decorators",
+            "Type Guards",
+            "Utility Types",
+        ]
     },
     {
-        id: 6,
+        id: 2,
         title: "React",
-        desc: "Experience in developing web applications using React, including state management and creating reusable components.",
-        conocimientos: ["Components", "States", "Routing", "Hooks", "Testing", "Redux", "Zustand"],
-    },
-    {
-        id: 7,
-        title: "Next JS",
-        desc: "Solid foundational knowledge of Next JS, focusing on server-side rendering (SSR) and performance optimization.",
-        conocimientos: ["SSR", "Optimization", "SEO", "Auth", "Next UI"],
-    },
-    {
-        id: 8,
-        title: "Node JS & Nest",
-        desc: "Experience in developing APIs for projects with Node, applying REST architecture principles and MVC.",
-        conocimientos: ["APIs", "Auth", "JWT", "Cookies", "Testing", "MVC", "Webhooks", "Websockets"],
-    },
-    {
-        id: 9,
-        title: "MongoDB",
-        desc: "Implementation of MongoDB in various projects, focusing on the use of efficient schemas and data models.",
-        conocimientos: ["CRUD", "Aggregations", "Indexing", "Sets"],
-    },
-    {
-        id: 10,
-        title: "Relational Databases",
-        desc: "I have experience in managing and administering relational databases, optimizing queries and ensuring data integrity.",
-        conocimientos: ["SQL", "Advanced Queries", "Procedures", "Triggers", "Data Modeling", "Views", "Optimization"],
+        desc: "Expertise in building modern web applications with React ecosystem and best practices",
+        conocimientos: [
+            "Context API",
+            "Custom Hooks",
+            "Performance Optimization",
+            "Component Patterns",
+            "State Management",
+        ]
     },
     {
         id: 3,
-        title: "Tailwind CSS",
-        desc: "Solid knowledge of the most used CSS framework, Tailwind CSS, with experience in creating responsive designs.",
-        conocimientos: ["Dark Mode", "Plugins", "Optimization", "Design"],
+        title: "Next.js",
+        desc: "Experience in building production-grade applications with Next.js framework features",
+        conocimientos: [
+            "Server Components",
+            "Server Actions",
+            "Dynamic Routing",
+            "API Routes",
+            "Data Fetching Patterns",
+            "Image Optimization",
+            "Middleware"
+        ]
     },
     {
-        id: 11,
-        title: "Extras",
-        desc: "Additional technologies learned and implemented that complement my web development skills.",
-        conocimientos: ["Java (Basic)", "PHP (Basic)", "Firebase", "GraphQL", "Docker", "Vercel", "GitHub"],
+        id: 4,
+        title: "Node.js & NestJS",
+        desc: "Proficient in building scalable backend services and RESTful APIs",
+        conocimientos: [
+            "RESTful Architecture",
+            "Authentication/Authorization",
+            "Dependency Injection",
+            "Microservices",
+            "Real-time Communication",
+            "Error Handling",
+            "API Documentation"
+        ]
     },
+    {
+        id: 5,
+        title: "MongoDB",
+        desc: "Experience in designing and optimizing NoSQL database solutions",
+        conocimientos: [
+            "Schema Design",
+            "Query Optimization",
+            "Data Modeling",
+            "Atlas Services"
+        ]
+    },
+    {
+        id: 6,
+        title: "SQL Databases",
+        desc: "Strong foundation in relational database design and optimization",
+        conocimientos: [
+            "Query Optimization",
+            "Database Design",
+            "Stored Procedures",
+            "Performance Tuning",
+        ]
+    },
+    {
+        id: 7,
+        title: "Tailwind CSS",
+        desc: "Proficiency in building responsive and maintainable user interfaces",
+        conocimientos: [
+            "Custom Configuration",
+            "Responsive Design",
+            "Component Styling",
+            "Theme System",
+            "Custom Plugins",
+        ]
+    },
+    {
+        id: 8,
+        title: "Additional Skills",
+        desc: "Complementary technologies and tools for full-stack development",
+        conocimientos: [
+            "Docker Containerization",
+            "Cloud Deployment",
+            "Version Control",
+            "GraphQL APIs",
+            "Firebase Services",
+        ]
+    }
 ];
 
 export const estudios = [
     {
-        id: 4,
-        title: "Typescript",
-        desc: "Sólida comprensión de Typescript, incluyendo tipos, interfaces, y la capacidad de implementar un código más estructurado y mantenible.",
-        conocimientos: [""],
+        id: 1,
+        title: "TypeScript",
+        desc: "Comprensión profunda del sistema de tipos y características avanzadas de TypeScript para construir aplicaciones escalables",
+        conocimientos: [
+            "Tipos e Interfaces",
+            "Genéricos",
+            "Decoradores",
+            "Guardas de Tipo",
+            "Tipos Utilitarios",
+        ]
     },
     {
-        id: 6,
+        id: 2,
         title: "React",
-        desc: "Experiencia en el desarrollo de aplicaciones web utilizando React, incluyendo la gestión del estado y la creación de componentes reutilizables.",
-        conocimientos: ["Componentes", "Estados", "Enrutamientos", "Hooks", "Testing", "Redux", "Zustand"],
-    },
-    {
-        id: 7,
-        title: "Next JS",
-        desc: "Base sólida de conocimientos en Next JS, centrándose en la renderización del lado del servidor (SSR) y la optimización del rendimiento.",
-        conocimientos: ["SSR", "Optimización", "SEO", "Auth", "Next UI"],
-    },
-    {
-        id: 8,
-        title: "Node JS & Nest",
-        desc: "Experiencia en el desarrollo de APIs para proyectos con Node, aplicando principios de arquitectura REST y MVC.",
-        conocimientos: ["APIs", "Auth", "JWT", "Cookies", "Testing", "MVC", "Webhooks", "Websockets"],
-    },
-    {
-        id: 9,
-        title: "MongoDB",
-        desc: "Implementación de MongoDB en distintos proyectos, con enfoque en el uso de esquemas y modelos de datos eficientes.",
-        conocimientos: ["CRUD", "Agregaciones", "Indexación", "Sets"],
-    },
-    {
-        id: 10,
-        title: "Bases De Datos Relacionales",
-        desc: "Tengo experiencia en el manejo y administración de bases de datos relacionales, optimizando consultas y garantizando la integridad de los datos.",
-        conocimientos: ["SQL", "Consultas Avanzadas", "Procedimientos", "Triggers", "Modelado De Datos", "Vistas", "Optimización"],
+        desc: "Experiencia en construcción de aplicaciones web modernas con el ecosistema React y mejores prácticas",
+        conocimientos: [
+            "API de Contexto",
+            "Hooks Personalizados",
+            "Optimización de Rendimiento",
+            "Patrones de Componentes",
+            "Gestión de Estado",
+        ]
     },
     {
         id: 3,
-        title: "Tailwind CSS",
-        desc: "Sólidos conocimientos en el framework CSS más utilizado, Tailwind CSS, con experiencia en la creación de diseños responsivos.",
-        conocimientos: ["Modo Oscuro", "Plugins", "Optimización", "Diseño"],
+        title: "Next.js",
+        desc: "Experiencia en construcción de aplicaciones de producción con características del framework Next.js",
+        conocimientos: [
+            "Componentes de Servidor",
+            "Acciones de Servidor",
+            "Enrutamiento Dinámico",
+            "Rutas de API",
+            "Patrones de Obtención de Datos",
+            "Optimización de Imágenes",
+            "Middleware"
+        ]
     },
     {
-        id: 11,
-        title: "Extras",
-        desc: "Tecnologías aprendidas e implementadas extras, que complementan mis habilidades en desarrollo web.",
-        conocimientos: ["Java (Básico)", "PHP (Básico)", "Firebase", "GraphQL", "Docker", "Vercel", "GitHub"],
+        id: 4,
+        title: "Node.js & NestJS",
+        desc: "Competencia en construcción de servicios backend escalables y APIs RESTful",
+        conocimientos: [
+            "Arquitectura REST",
+            "Autenticación/Autorización",
+            "Inyección de Dependencias",
+            "Microservicios",
+            "Comunicación en Tiempo Real",
+            "Manejo de Errores",
+            "Documentación de API"
+        ]
     },
+    {
+        id: 5,
+        title: "MongoDB",
+        desc: "Experiencia en diseño y optimización de soluciones de base de datos NoSQL",
+        conocimientos: [
+            "Diseño de Esquemas",
+            "Optimización de Consultas",
+            "Modelado de Datos",
+            "Servicios Atlas"
+        ]
+    },
+    {
+        id: 6,
+        title: "Bases de Datos SQL",
+        desc: "Sólida base en diseño y optimización de bases de datos relacionales",
+        conocimientos: [
+            "Optimización de Consultas",
+            "Diseño de Base de Datos",
+            "Procedimientos Almacenados",
+            "Ajuste de Rendimiento",
+        ]
+    },
+    {
+        id: 7,
+        title: "Tailwind CSS",
+        desc: "Competencia en construcción de interfaces de usuario responsivas y mantenibles",
+        conocimientos: [
+            "Configuración Personalizada",
+            "Diseño Responsivo",
+            "Estilizado de Componentes",
+            "Animación",
+            "Plugins Personalizados",
+        ]
+    },
+    {
+        id: 8,
+        title: "Habilidades Adicionales",
+        desc: "Tecnologías y herramientas complementarias para desarrollo full-stack",
+        conocimientos: [
+            "Containerización con Docker",
+            "Control de Versiones",
+            "APIs GraphQL",
+            "Servicios Firebase",
+            "Frameworks de Testing"
+        ]
+    }
 ];

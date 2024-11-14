@@ -43,11 +43,11 @@ export default function TopMenu() {
 
   return (
     <div className='fixed top-0 right-0 w-full z-20 blur-backdrop'>
-      <a target='_blank' href='https://www.linkedin.com/in/valentinocopperi/' className={classNames('flex justify-center items-center py-3 px-4 border-b border-gray-400', { 'bg-top-banner-light': mode, 'bg-top-banner-dark': !mode })}>
+      <div className={classNames('flex justify-center items-center py-3 px-4 border-b border-gray-400', { 'bg-top-banner-light': mode, 'bg-top-banner-dark': !mode })}>
         <RocketLaunchIcon className='text-violet-400' />
         <p className='text-animation  mx-2 text-center sm:mx-4'>{texts[idioma].contactMeBtn}</p>
         <AnimatedGradientText children={texts[idioma].contactMeBtn} className='text-animation-button' />
-      </a>
+      </div>
       <div className='flex flex-col-reverse md:flex-row md:items-center md:justify-between sm:px-9 text-white'>
         <div className='flex mx-auto md:m-0 py-2'>
           <img onClick={scroll} id='home' src="/v-color.svg" className='cursor-pointer hidden sm:block sm:mr-1 ' alt="" width={30} />
@@ -83,8 +83,8 @@ export default function TopMenu() {
 
           {/* idioma switcher */}
           <Flag
-            title="Cambiar idioma"
-            code={idioma === 'SP' ? "US" : "ES"}
+            title={idioma === 'SP' ? "Cambiar idioma" : "Change language"}
+            code={idioma === 'SP' ? "ES" : "US"}
             width={25}
             onClick={handleIdioma}
             className='mx-2 cursor-pointer'
