@@ -18,7 +18,11 @@ export default function MainTitle() {
     link.href = pdfUrl;
 
     // Establecer el atributo download para forzar la descarga
-    link.setAttribute('download', 'CV-VALENTINO-COPPERI.pdf');
+    if(idioma=='EN'){
+      link.setAttribute('download', 'cv-valentino-en-2024.pdf');
+    }else{
+      link.setAttribute('download', 'CV-VALENTINO-COPPERI.pdf');
+    }
 
     // Agregar el elemento <a> al documento
     document.body.appendChild(link);
