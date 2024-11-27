@@ -18,9 +18,9 @@ export default function MainTitle() {
     link.href = pdfUrl;
 
     // Establecer el atributo download para forzar la descarga
-    if(idioma=='EN'){
+    if (idioma == 'EN') {
       link.setAttribute('download', 'cv-valentino-en-2024.pdf');
-    }else{
+    } else {
       link.setAttribute('download', 'CV-VALENTINO-COPPERI.pdf');
     }
 
@@ -54,7 +54,15 @@ export default function MainTitle() {
       <div className='text-white text-4xl '>
         <div>
           <h1 className={classNames({ 'text-dark': mode })}>
-            {texts[idioma]?.greeting || texts['ES'].greeting} <span className='text-[#9353D3] font-bold underline'>Valentino Copperi</span>
+            {texts[idioma]?.greeting || texts['ES'].greeting}
+            <span style={{
+              color: '#A002FF',
+              textShadow: '   0 0 2px blueviolet, 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 40px blueviolet',
+              marginLeft : '3px'  
+            }}
+            >
+              Valentino Copperi
+            </span>
           </h1>
         </div>
         <div className='py-2'>

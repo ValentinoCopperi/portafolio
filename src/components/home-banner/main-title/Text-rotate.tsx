@@ -36,7 +36,11 @@ export default function WordRotate({
       <AnimatePresence mode="wait">
         <motion.h1
           key={words[index]}
-         className='text-[#9353D3]'
+          style={{
+            color: '#A002FF',
+            textShadow: '   0 0 2px blueviolet, 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 40px blueviolet',
+            marginLeft : '3px'  
+          }}
           {...framerProps}
         >
           {words[index]}
