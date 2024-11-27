@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import WordRotate from './Text-rotate'
 import ShimmerButton from './Main-button'
 import './button.css'
@@ -10,27 +10,30 @@ import { useIdiomaContext } from '../../../context/idioma/Idioma-Context'
 export default function MainTitle() {
   const { mode } = useModeContext()
   const { idioma } = useIdiomaContext();
-  const downloadCv = () => {
-    const pdfUrl = '/CV-VALENTINO-COPPERI.pdf';  // Ruta relativa desde la carpeta pública
 
-    // Crear un elemento <a>
+  const [subMenuOpen, setSubMenuOpen] = useState(false);
+
+  const downloadCv = (idio) => {
+
+    const pdfUrl = idio == "EN" ? '/cv-valentino-en-2024.pdf' : '/CV-VALENTINO-COPPERI.pdf';
+
+    // Establecer el nombre del archivo de descarga según el idioma
+    const downloadName = idio == "EN" ? 'cv-valentino-en-2024.pdf' : 'CV-VALENTINO-COPPERI.pdf';
+
+    // Crear un elemento <a> para descargar el archivo
     const link = document.createElement('a');
     link.href = pdfUrl;
 
-    // Establecer el atributo download para forzar la descarga
-    if (idioma == 'EN') {
-      link.setAttribute('download', 'cv-valentino-en-2024.pdf');
-    } else {
-      link.setAttribute('download', 'CV-VALENTINO-COPPERI.pdf');
-    }
+    // Establecer el atributo 'download' para forzar la descarga con el nombre del archivo
+    link.setAttribute('download', downloadName);
 
     // Agregar el elemento <a> al documento
     document.body.appendChild(link);
 
-    // Simular un clic en el enlace
+    // Simular un clic en el enlace para iniciar la descarga
     link.click();
 
-    // Eliminar el enlace del documento
+    // Eliminar el enlace del documento después de la descarga
     document.body.removeChild(link);
   }
 
@@ -58,7 +61,7 @@ export default function MainTitle() {
             <span style={{
               color: '#A002FF',
               textShadow: '   0 0 2px blueviolet, 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 40px blueviolet',
-              marginLeft : '3px'  
+              marginLeft: '3px'
             }}
             >
               Valentino Copperi
@@ -75,7 +78,28 @@ export default function MainTitle() {
         {texts[idioma]?.description || texts['ES'].description}
       </p>
 
-      <ShimmerButton onClick={downloadCv} id='sobremi' children={texts[idioma]?.downloadCv || texts['ES'].downloadCv} className='text-button' />
+      <div className='w-1/2 mx-auto md:m-0' onMouseEnter={()=> setSubMenuOpen(true)} onMouseLeave={() => setSubMenuOpen(false)} >
+        <ShimmerButton onClick={()=>downloadCv(idioma)} id='sobremi' children={texts[idioma]?.downloadCv || texts['ES'].downloadCv} className='text-button' />
+        {subMenuOpen && (
+        <div
+          className="absolute p-2 bg-white rounded-md shadow-lg md:flex-col"
+        >
+          <button
+            className="block text-black py-1 px-3 hover:bg-gray-200"
+            onClick={() => downloadCv("SP")}
+          >
+            Español
+          </button>
+          <button
+            className="block text-black py-1 px-3 hover:bg-gray-200"
+            onClick={() => downloadCv("EN")}
+          >
+            English
+          </button>
+        </div>
+      )}
+      </div>
+
     </div>
   )
 }
