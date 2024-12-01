@@ -35,7 +35,11 @@ export const certificacionesSp = [
         utilidades: [
             {
                 habilidad: "Componentes Funcionales y Hooks",
-                descripcion: "Uso de componentes funcionales y manejo de estado con hooks como useState, useEffect, entre otros."
+                descripcion: "Uso de componentes funcionales y manejo de estado con hooks como useState, useEffect, useMemo, useCallback y creación de hooks personalizados."
+            },
+            {
+                habilidad: "Patrones de Diseño",
+                descripcion: "Aplicación de patrones de diseño en React, como el patrón de contenedor/presentacional y render props, para mejorar la organización y reutilización del código."
             },
             {
                 habilidad: "Estado Global",
@@ -89,7 +93,11 @@ export const certificacionesEn = [
         utilidades: [
             {
                 habilidad: "Functional Components and Hooks",
-                descripcion: "Using functional components and managing state with hooks like useState, useEffect, among others."
+                descripcion: "Using functional components and managing state with hooks like useState, useEffect, useMemo, useCallback, and creating custom hooks."
+            },
+            {
+                habilidad: "Design Patterns",
+                descripcion: "Applying design patterns in React, such as container/presentational pattern and render props, to enhance code organization and reusability."
             },
             {
                 habilidad: "Global State",

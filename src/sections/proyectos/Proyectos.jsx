@@ -18,7 +18,7 @@ export default function Proyectos() {
         }
     }
     return (
-        <div id='proyectosScroll' className='w-[90%] md:w-[90%] mx-auto'>
+        <div id='proyectosScroll' className='md:w-[90%] mx-auto'>
             <div className='text-center'>
                 <span className='text-[#bb87f3] font-semibold'>{texts[idioma].title}</span>
 
@@ -28,7 +28,7 @@ export default function Proyectos() {
 
             </div>
             <div>
-
+                
                 <ProyectosList />
 
             </div>

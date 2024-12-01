@@ -4,10 +4,10 @@ export const proyectosListSp = [
         date : "Feb 20 2024",
         nombre : "English Quiz App",
         stack : "Frontend",
-        desc : "Aplicacion para aprender y mejorar ingles para niveles principiantes,intermedios y avanzados , con disintos topicos disponibles",
+        desc : "La aplicación está diseñada para ayudar a los usuarios a aprender y perfeccionar su inglés en tres niveles de dificultad: principiante, intermedio y avanzado. Ofrece una amplia variedad de temas y actividades para hacer el aprendizaje más dinámico y efectivo.",
         img : "english.png",
         link : "https://english-app-alpha.vercel.app",
-        tecnologias : ['Next JS' , 'TailwindCSS'],
+        tecnologias : ['Next JS' , 'TailwindCSS',,'React','Typescript','Cookies'],
         detalles : [
             {
                 titulo : "Cookies",
@@ -19,11 +19,11 @@ export const proyectosListSp = [
         id: 3,
         date: 'Apr 23 2024',
         nombre: 'Twitter App',
-        stack: 'Frontend',
+        stack: 'Full Stack',
         desc: 'Aplicación red social de tareas construida en Next.js y TypeScript. Permite a los usuarios gestionar sus tareas de manera eficiente, con una interfaz moderna y responsiva.',
         img: 'taskapp.png',
         link: "https://task-app-valentinocopperi.vercel.app/",
-        tecnologias: ['Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB'],
+        tecnologias: ['Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB','NodeJS'],
         detalles: [
             {
                 titulo: 'TailwindCSS',
@@ -133,10 +133,10 @@ export const proyectosListEn = [
         date : "Feb 20 2024",
         nombre : "English Quiz App",
         stack : "Frontend",
-        desc : "App that will help you to learn and improve your English level",
+        desc : "The app is designed to help users learn and improve their English at three levels of proficiency: beginner, intermediate, and advanced. It offers a wide range of topics and activities to make learning dynamic and effective.",
         img : "english.png",
         link : "https://english-app-alpha.vercel.app",
-        tecnologias : ['Next JS' , 'TailwindCSS'],
+        tecnologias : ['Next JS' , 'TailwindCSS','React','Typescript','Cookies'],
         detalles : [
             {
                 titulo : "Cookies",
@@ -148,11 +148,11 @@ export const proyectosListEn = [
         id: 3,
         date: 'Apr 23 2024',
         nombre: 'Twitter App',
-        stack: 'Frontend',
+        stack: 'Full Stack',
         desc: 'Twitter social media application built with Next.js and TypeScript. It allows users to efficiently manage their tasks with a modern and responsive interface.',
         img: 'taskapp.png',
         link: "https://task-app-valentinocopperi.vercel.app/",
-        tecnologias: ['Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB'],
+        tecnologias: ['Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB','NodeJS'],
         detalles: [
             {
                 titulo: 'TailwindCSS',
