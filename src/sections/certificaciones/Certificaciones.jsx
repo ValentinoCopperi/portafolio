@@ -21,7 +21,7 @@ export default function Certificaciones() {
             <div className='text-center'>
                 <span className='text-[#bb87f3] font-semibold'> {idioma === "SP" ? "Certificaciones" : "Certifications" } </span>
 
-                <h1 className={classNames('text-5xl py-2 pb-8 font-semibold', { 'text-black': mode, 'text-white': !mode })}>
+                <h1 className={classNames('text-5xl py-2 pb-8 text-wrap font-semibold', { 'text-black': mode, 'text-white': !mode })}>
                 {idioma === "SP" ? "Mis Certificaciones" : "My Certifications" }
                 </h1>
 
