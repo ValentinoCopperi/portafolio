@@ -33,7 +33,7 @@ export default function HomeBanner() {
             className='relative h-screen'
         >
             <div
-                className={`${mode ? 'background-light' : 'background-black'} absolute grid grid-cols-1 md:grid-cols-2 px-3 pt-[26vh] h-full w-full`}
+                className={`${mode ? 'background-light' : 'background-black'} absolute grid grid-cols-1 lg:grid-cols-2 px-3 pt-[26vh] h-full w-full`}
                 style={{
                     backgroundImage: 'url(/looper-pattern.svg)',
                     backgroundAttachment: 'scroll',
@@ -44,7 +44,7 @@ export default function HomeBanner() {
                 <div className='col-span-1 mx-auto flex items-center'>
                     <MainTitle />
                 </div>
-                <div className='col-span-1 mx-auto hidden md:flex md:items-start md:justify-start'>
+                <div className=' mx-auto hidden lg:col-span-1 lg:flex lg:items-start lg:justify-start'>
                     <IconCloud iconSlugs={icons} />
                 </div>
             </div>

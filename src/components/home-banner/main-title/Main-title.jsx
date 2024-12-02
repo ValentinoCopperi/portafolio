@@ -78,7 +78,7 @@ export default function MainTitle() {
 
   return (
     <motion.div
-      className='w-full text-center md:text-left'
+      className='w-full text-center lg:text-left'
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -124,7 +124,7 @@ export default function MainTitle() {
       </motion.p>
 
       <motion.div
-        className='w-1/2 mx-auto md:m-0'
+        className='w-1/2 mx-auto  lg:m-0'
         onMouseEnter={() => setSubMenuOpen(true)}
         onMouseLeave={() => setSubMenuOpen(false)}
         variants={itemVariants}

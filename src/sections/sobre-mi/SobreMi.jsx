@@ -51,7 +51,7 @@ export default function SobreMi() {
           {texts[idioma]?.education}
         </p>
 
-        <div className={classNames('py-6 flex flex-col text-xl justify-center items-center md:flex-row', { 'text-black': mode, 'text-white': !mode })}>
+        <div className={classNames('py-6 flex  text-nowrap flex-col text-xl justify-center items-center lg:flex-row ', { 'text-black': mode, 'text-white': !mode })}>
           <div className='flex items-center mb-2 md:mb-0'>
             <PersonIcon className='text-[#bb87f3]' />
             <p className='ml-2'>{texts[idioma].name}:</p>
