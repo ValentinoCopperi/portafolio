@@ -5,7 +5,7 @@ export const IdiomaContext = createContext();
 export function IdiomaContextProvider({ children }) {
     const [idioma, setIdioma] = useState(() => {
         const savedMode = localStorage.getItem('idioma');
-        return savedMode !== null ? 'SP' : 'EN';
+        return savedMode !== null ? savedMode : 'SP';
     });
 
     useEffect(() => {
